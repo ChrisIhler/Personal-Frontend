@@ -6,10 +6,6 @@ import request from '../../utils/request'
 
 class IhelpOfferQueueMiniProfile extends Component {
 
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     request(`/queues/${this.props.authentication.user.id}`,'get')
     .then(response => {

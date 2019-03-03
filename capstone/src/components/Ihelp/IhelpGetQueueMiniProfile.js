@@ -6,10 +6,6 @@ import request from '../../utils/request'
 
 class IhelpGetQueueMiniProfile extends Component {
 
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     request('/users','get')
     .then(response => {

@@ -35,6 +35,4 @@ class IhelpGetRequest extends Component {
   }
 }
 
-const mapStateToProps 
-
 export default IhelpGetRequest
