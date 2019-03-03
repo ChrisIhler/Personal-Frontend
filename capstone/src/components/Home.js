@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import Footer from './Footer'
-import image from './images/ihelp.jpg'
+// import image from './images/ihelp.jpg'
 
 const Home = props =>
 
      <div>
 
-    <img src={image} alt="ihelp" />
+    <img src={``} alt="ihelp" />
 
     {/* <div className="container">
       <Labels />

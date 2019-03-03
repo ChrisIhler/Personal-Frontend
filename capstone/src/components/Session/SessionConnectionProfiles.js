@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 class SessionConnectionProfiles extends Component {
 
   render(){
-    
     return (
       <div>
           <div className="card" style={{marginBottom: '10px'}}>

@@ -17,7 +17,7 @@ class Login extends Component {
     event.preventDefault() 
     const { inputEmail, inputPassword } = event.target
     request('/auth/token','post', {
-      username: inputEmail.value,
+      email: inputEmail.value,
       password: inputPassword.value })
     .then(response => {
       this.setState({ showErrorMessage: false })
@@ -42,11 +42,15 @@ class Login extends Component {
           </div>
 
           <div className="form-label-group">
-            <input type="text" name="inputEmail" id="inputEmail" className="form-control" placeholder="Email address" required autoFocus />
+            <p>
+              <input type="text" name="inputEmail" id="inputEmail" className="form-control" placeholder="Email address" required autoFocus />
+            </p>
           </div>
 
           <div className="form-label-group">
-            <input type="password" name="inputPassword" id="inputPassword" className="form-control" placeholder="Password" required />
+            <p>
+              <input type="password" name="inputPassword" id="inputPassword" className="form-control" placeholder="Password" required />
+            </p>
           </div>
           <div className={ !this.state.showErrorMessage ? 'login-auth-error login-hide-auth-error' : 'login-auth-error' }>
             Invalid Username or Password
